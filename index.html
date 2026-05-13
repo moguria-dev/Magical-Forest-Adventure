@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#20163f" />
+  <title>Moonlit Mouse Mage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="rotateNotice">
+    <img src="assets/icon.png" alt="" />
+    <h1>横画面にしてプレイ</h1>
+    <p>スマホを横にすると、左右コントローラーが表示されます。</p>
+  </div>
+  <main id="gameWrap">
+    <canvas id="game" width="960" height="540"></canvas>
+    <div id="hud">
+      <div id="title">Moonlit Mouse Mage</div>
+      <div id="stageText">STAGE 1</div>
+      <div id="hpBar"><span></span></div>
+      <button id="restartBtn" type="button">RESTART</button>
+    </div>
+    <div class="controls leftControls" aria-label="left controller">
+      <button id="btnLeft" class="pad">◀</button>
+      <button id="btnRight" class="pad">▶</button>
+    </div>
+    <div class="controls rightControls" aria-label="right controller">
+      <button id="btnJump" class="pad big">JUMP</button>
+      <button id="btnFire" class="pad big">MAGIC</button>
+    </div>
+    <div id="message"></div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
