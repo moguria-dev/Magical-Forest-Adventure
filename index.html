@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magical Forest Adventure</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="title-panel">
+      <div>
+        <p class="eyebrow">Original Browser Game</p>
+        <h1>Magical Forest Adventure</h1>
+        <p class="lead">魔法の森を走って、星を集め、ちいさな敵をジャンプと魔法で越えていく横スクロールアクション。</p>
+      </div>
+      <div class="controls">
+        <span>← → / A D：移動</span>
+        <span>Space / W / ↑：ジャンプ</span>
+        <span>J / Z：魔法</span>
+        <span>R：リスタート</span>
+      </div>
+    </section>
+
+    <section class="game-shell">
+      <canvas id="game" width="960" height="540" aria-label="Magical Forest Adventure game canvas"></canvas>
+      <div id="touchControls" class="touch-controls" aria-hidden="true">
+        <button data-key="left">←</button>
+        <button data-key="right">→</button>
+        <button data-key="jump">JUMP</button>
+        <button data-key="magic">MAGIC</button>
+      </div>
+      <div id="message" class="message hidden"></div>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
